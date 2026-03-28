@@ -1,6 +1,6 @@
 # AI Chat Integration API
 
-> A production-ready Spring Boot middleware that connects a secured REST API to an external AI model — demonstrating real-world System Integration patterns used in enterprise applications.
+> I built a Spring Boot integration layer that acts as a middleware between a client application and an external AI model. The system authenticates users via JWT, forwards their requests to the Groq AI API using REST with Bearer token authorization, persists every conversation in MySQL for auditability, and returns structured JSON responses. The architecture is: User → REST API → JWT Auth → External AI Service → MySQL → JSON Response. This is the same pattern used in enterprise AI integrations where you never expose the AI directly to the client — everything goes through a secured integration layer. 
 
 ---
 
